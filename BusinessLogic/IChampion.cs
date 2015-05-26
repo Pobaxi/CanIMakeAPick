@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace BusinessLogic
 {
     /// <summary>
     /// 
     /// </summary>
-    interface IChampion
+    public interface IChampion
     {
         /// <summary>
         /// Gets the champions name.
@@ -17,7 +14,7 @@ namespace BusinessLogic
         /// <summary>
         /// Gets a list of the champions abilities.
         /// </summary>
-        IList<IAbility> Abilities { get; }
+        IDictionary<AbilityButtons,IAbility> Abilities { get; }
         /// <summary>
         /// Gets/Sets the champions ability power stat.
         /// </summary>

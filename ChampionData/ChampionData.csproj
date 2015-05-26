@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ABC43F45-C07D-4C83-BBFB-52DE270445CD}</ProjectGuid>
+    <ProjectGuid>{83854754-135F-481F-B520-8378AA6A4BF1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BusinessLogic</RootNamespace>
@@ -40,28 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abilities\AbilityBase.cs" />
-    <Compile Include="Abilities\Diana\CrescentStrike.cs" />
-    <Compile Include="Abilities\Diana\LunarRush.cs" />
-    <Compile Include="Abilities\Diana\Moonfall.cs" />
-    <Compile Include="Abilities\Diana\PaleCascade.cs" />
-    <Compile Include="AbilityButtons.cs" />
-    <Compile Include="ChampionBase.cs" />
-    <Compile Include="ChampionCollection.cs" />
-    <Compile Include="Champions\Diana.cs" />
-    <Compile Include="DamageCalculation.cs" />
-    <Compile Include="DamageType.cs" />
-    <Compile Include="IAbility.cs" />
-    <Compile Include="IChampion.cs" />
-    <Compile Include="IPassive.cs" />
-    <Compile Include="ITarget.cs" />
+    <Compile Include="ChampionInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ChampionData\ChampionData.csproj">
-      <Project>{83854754-135F-481F-B520-8378AA6A4BF1}</Project>
-      <Name>ChampionData</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

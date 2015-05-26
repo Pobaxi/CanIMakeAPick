@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace BusinessLogic.Abilities
 {
@@ -17,7 +15,7 @@ namespace BusinessLogic.Abilities
             DamageType = damageType;
 
             // checks for doubles on < 0 ?
-            if (ratio <= 0)
+            if (ratio < 0)
             {
                 throw new ArgumentOutOfRangeException("ratio","ratio has to be positive");
             }

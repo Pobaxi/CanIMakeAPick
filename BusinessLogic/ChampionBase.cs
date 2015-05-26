@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace BusinessLogic
 {
@@ -31,7 +29,7 @@ namespace BusinessLogic
         /// <summary>
         /// Gets a list of the champions abilities.
         /// </summary>
-        public IList<IAbility> Abilities { get; internal set; }
+        public IDictionary<AbilityButtons,IAbility> Abilities { get; internal set; }
 
         /// <summary>
         /// Gets/Sets the champions ability power stat.
